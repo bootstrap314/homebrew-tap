@@ -3,8 +3,11 @@
 Install the macOS menu-bar app **and** the terminal CLI together:
 
 ```sh
+brew trust --formula bootstrap314/tap/ac-man
 brew install --cask bootstrap314/tap/ac-man
 ```
+
+The first command approves the CLI dependency on Homebrew versions with tap trust enforcement. If your Homebrew does not have a `trust` command, skip that line. The cask then installs both components.
 
 The cask installs `ac-man.app` into Applications and installs the CLI formula as a dependency. Open ac-man from Applications; use `ac-man` in Terminal. The app requires an Apple Silicon Mac running macOS 13 or later. Both downloads come from the signed v0.0.2 release; the app and DMG are Developer ID signed and notarized. The CLI tarballs are verified with SHA-256 checksums.
 
