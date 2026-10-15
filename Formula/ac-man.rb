@@ -1,25 +1,25 @@
 class AcMan < Formula
   desc "Command-line controller for Midea SmartHome air conditioners"
   homepage "https://github.com/bootstrap314/ac-man"
-  version "0.0.2"
+  version "0.0.3"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/bootstrap314/ac-man/releases/download/v#{version}/ac-man-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1b69056eb19648150b17155212035bbc0fc04c98acd08d0378e22a4663ecdbdc"
+      sha256 "583039eae826bfb6f60a8337b5d0e6b26cc701c01f216fe180ccaf4513084b62"
     end
 
     on_intel do
       url "https://github.com/bootstrap314/ac-man/releases/download/v#{version}/ac-man-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "91c33556c4a1d0bc0e26c57a1662a5db40db6ca595b51e975461a3c9f6e3b5d8"
+      sha256 "faa9462d37b6bb79f6bc9645f50a331eb033c214b5cd0d07bee357331041ae18"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bootstrap314/ac-man/releases/download/v#{version}/ac-man-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "dcb5222ea65d97ddcdbc7108594475a9f27dc8c761e43fc7502c696d1e7467f0"
+      sha256 "5981ee26f70388022f9c7c1b7db79c03dcf0a957444a344c18e919ef86828111"
     end
 
     depends_on arch: :x86_64
