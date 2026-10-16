@@ -1,6 +1,6 @@
 cask "ac-man" do
-  version "0.0.3"
-  sha256 "41005335e269e35487aeb455d302bd5ec827d708eb9287bb481c0e8d5545b4ed"
+  version "0.0.4"
+  sha256 "3f9af55f167376c54c79568371dba754c0e69ed04d2c435a837e65f67a4257a6"
 
   url "https://github.com/bootstrap314/ac-man/releases/download/v#{version}/ac-man-app-v#{version}-macos-apple-silicon.dmg"
   name "ac-man"
